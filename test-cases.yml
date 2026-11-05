@@ -40,9 +40,9 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search = laptops
+    search = beauty
   steps:
-    - Выбираем категорию laptops
+    - Выбираем категорию beauty
   expected-result: |
     Должны отфильтроваться соответствующие товары
   
@@ -51,7 +51,7 @@
   requirement: |
     При выборе категории должны оттфильтроваться соответствующие товары
   prerequisites: |
-    открыта страница магазина, выбрана категория motorcycle
+    открыта страница магазина, выбрана категория beauty
   test-data: |
     search = furniture
   steps:
