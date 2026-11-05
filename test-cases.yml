@@ -23,7 +23,7 @@
   prerequisites: |
     открыта страница магазина, в поле поиска введено fork
   test-data: |
-    search = 
+  браузер Опера
   steps:
     - нажимаем на поле поиска
     - Удаляем k
@@ -66,7 +66,7 @@
   prerequisites: |
     открыта страница магазина, выбрана категория groceries
   test-data: |
-    search =
+    браузер Хром
   steps:
     - Убираем категорию
   expected-result: |
@@ -79,7 +79,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    браузер Яндекс браузер
   steps:
     - последовательно ставим галочки на брендах
   expected-result: |
@@ -92,7 +92,7 @@
   prerequisites: |
     открыта страница магазина, выбраны все бренды
   test-data: |
-    search =
+    браузер Микрософт Эдж
   steps:
     - последовательно снимаем галочки на брендах
   expected-result: |
@@ -105,7 +105,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    браузер Опера
   steps:
     - ставим галочку на поле In stock
   expected-result: |
@@ -118,7 +118,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    браузер Опера
   steps:
     - снимаем галочку на поле In stock
   expected-result: |
@@ -131,7 +131,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search = 100
+    price = 100
   steps:
     - вводим минимальную цену 100
   expected-result: |
@@ -144,7 +144,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search = 300
+    price = 300
   steps:
     - вводим максимальную цену 300
   expected-result: |
@@ -157,7 +157,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search = 1.5, 99999999
+    price = 1.5, 99999999
   steps:
     - вводим минимальную цену 1.5, вводим максимальную цену 99999999
   expected-result: |
@@ -170,7 +170,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    браузер Опера
   steps:
     - нажимаем на товар "Eggs"
   expected-result: |
@@ -183,7 +183,7 @@
   prerequisites: |
     открыта страница товара "Eggs"
   test-data: |
-    search =
+    браузер Опера
   steps:
     - нажимаем на кнопку "Store" справо сверху
   expected-result: |
@@ -196,7 +196,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    браузер Опера
   steps:
     - прокручиваем колесо мыши вниз, вверх
   expected-result: |
@@ -209,7 +209,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    браузер Хром
   steps:
     - нажимаем на кнопку Next внизу страницы
   expected-result: |
@@ -222,7 +222,7 @@
   prerequisites: |
     открыта последняя страница магазина
   test-data: |
-    search =
+    браузер Хром
   steps:
     - нажимаем на кнопку "Previous" внизу страницы
   expected-result: |
@@ -235,7 +235,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    браузер Хром
   steps:
     - находим товар Apple, нажимаем на синюю кнопку Add to cart
   expected-result: |
@@ -248,7 +248,7 @@
   prerequisites: |
     открыта карточка товара Juice
   test-data: |
-    search =
+    браузер Хром
   steps:
     - нажимаем на синюю кнопку Add to cart
   expected-result: |
@@ -261,7 +261,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    браузер Хром
   steps:
     - нажимаем на кнопку Cart справо сверху
   expected-result: |
@@ -274,7 +274,7 @@
   prerequisites: |
     открыта страница корзины
   test-data: |
-    search =
+    браузер Хром
   steps:
     - нажимаем на кнопку Delete
   expected-result: |
@@ -287,7 +287,7 @@
   prerequisites: |
     открыта страница корзины, в ней находятся товары
   test-data: |
-    search =
+    браузер Опера
   steps:
     - нажимаем на кнопку Clear cart
   expected-result: |
@@ -300,7 +300,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    Яндекс браузер
   steps:
     - добавляем в корзину 30 наименований различных товаров, переходим в корзину, колесиком мыши проверяем перемещение по списку товаров в корзине
   expected-result: |
@@ -313,7 +313,7 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    Яндекс браузер
   steps:
     - в меню переключения языка выбираем русккий
   expected-result: |
@@ -326,7 +326,7 @@
   prerequisites: |
     открыта страница магазина, выбран русский язык
   test-data: |
-    search =
+    Яндекс браузер
   steps:
     - в меню переключения языка выбираем английский
   expected-result: |
@@ -339,8 +339,34 @@
   prerequisites: |
     открыта страница магазина
   test-data: |
-    search =
+    Яндекс браузер
   steps:
     - в меню переключения языка выбираем испанский
   expected-result: |
     Происходит перевод меню, каталога и карточек товаров на испанский язык
+
+- summary: |
+    Проверка внешнего вида мобильной версии
+  requirement: |
+    не происходит искажений отображения
+  prerequisites: |
+    открыта страница магазина на мбильном телефоне Iphone SE
+  test-data: |
+    Iphone SE
+  steps:
+    - проверяем отображение каталога, нажимаем на товар apple, проверяем отображение карточки товара, тапаем на кнопу Add to cart, тапаем на кнопку Cart, проверяем отображение корзины
+  expected-result: |
+    меню и карточки товра находятся на своих местах, не обрезаются, невыходят за зоны видимости
+
+- summary: |
+    Проверка отправки данных на сервер при добавлении товара
+  requirement: |
+    данные успешно отправляются на сервер
+  prerequisites: |
+    открыта страница магазина 
+  test-data: |
+    браузер Хром
+  steps:
+    - нажимаем на кнопку Add to cart любого товара
+  expected-result: |
+    в девтулс видим ушедший запрос на сервер со статусом 200
