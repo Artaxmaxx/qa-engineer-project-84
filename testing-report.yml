@@ -24,6 +24,10 @@
   status: pass
 
 - summary: |
+    6.1 Проверка фильтра товаров по бренду Nike
+  status: fail
+
+- summary: |
     7 Проверка снятия фильтра товаров по бренду
   status: pass
 
@@ -33,19 +37,19 @@
 
 - summary: |
     9 Проверка снятия фильтра товаров по наличию
-  status: pass
+  status: fail
 
 - summary: |
     10 Проверка минимального фильтра товаров по цене
-  status: pass
+  status: fail
 
 - summary: |
     11 Проверка максимального фильтра товаров по цене
-  status: pass
+  status: fail
 
 - summary: |
     12 Проверка минимального и максимального (вместе) фильтра товаров по цене
-  status: pass
+  status: fail
 
 - summary: |
     13 Проверка входа на страницу карточки товара
